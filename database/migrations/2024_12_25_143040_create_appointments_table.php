@@ -16,8 +16,8 @@ return new class extends Migration
             $table->string('name');
             $table->string('phone_number');
             $table->string('pet_type');
-            $table->date('date');
-            $table->time('time');
+            $table->date('appointment_dates');
+            $table->time('appointment_times');
             $table->timestamps();
         });
     }
