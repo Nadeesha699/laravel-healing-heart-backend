@@ -11,13 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('appointments', function (Blueprint $table) {
+        Schema::create('customer_feedback', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('phone_number');
-            $table->string('pet_type');
-            $table->date('date');
-            $table->time('time');
+            $table->String('customer_name');
+            $table->binary('profile');
+            $table->String('feedback');
+            $table->date('feedback_date');
             $table->timestamps();
         });
     }
@@ -27,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('appointments');
+        Schema::dropIfExists('customer_feedback');
     }
 };
