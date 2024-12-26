@@ -9,7 +9,7 @@ class AppointmentController extends Controller
 {
    public function addAppointment(Request $request){
       $appointment =  new Appointment();
-      $appointment->name 
+      // $appointment->name 
    }
 
 }
